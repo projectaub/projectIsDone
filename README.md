@@ -1,3 +1,17 @@
+# `컴포넌트 적어놓기`
+
+이 컴포넌트는 ToDo 리스트를 그려주는 컴포넌트입니다.
+
+    const Todo = ({todo, onRemoveTodo , checkTodo})=>{
+    return (<div key={todo.id}>{todo.title}-{todo.word}
+    <button className='delete-btn' onClick={() => onRemoveTodo(todo.id)}>삭제</button>
+    {todo.isDone?<button className='complete-btn' onClick={() => checkTodo(todo.id)}>취소</button> :  <button className='complete-btn' onClick={() => checkTodo(todo.id)}>완료</button>
+    }</div>)
+    }
+    export default Todo;
+
+코드끝!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
