@@ -2,3 +2,101 @@
     max-width: 1200px;
     min-width: 800px;
 }
+.left {
+    display : inline-flex;
+    margin : 20px;
+    font-size: 25px;
+    
+}
+.right {
+    display : inline-flex;
+    float : right;
+    margin : 20px;
+    font-size: 25px;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* * {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fffdfd;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #f1f1f5;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  font-size: 20px;
+  
+}
+
+.TodoForm {
+  width: 100%;
+}
+
+.todo-input {
+  outline: none;
+  background: color white;
+  border: 1px solid #969393;
+  border-radius: 5px;
+  padding: 0.6rem 0.5rem;
+  width: 300px;
+  color: #000000;
+}
+
+
+
+.todo-btn {
+  background: #627fdc;
+  color: #ffffff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+
+ .title-state{
+    height: 100px;
+ }
+
+ .style  {
+    padding: 100px;
+    display: flex;
+    gap: 12px;
+  };
+ 
+ 

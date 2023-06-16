@@ -70,11 +70,11 @@ function App() {
 //  랜더링 하는곳
   return (
     <div className='max' >
-      <div >My Todo List</div>
-      <div >React</div>
-      <div>제목<input value={title} onChange={titleChangeButtonHandler}/> 내용 <input value={word} onChange={wordChangeButtonHandler}/> <button onClick={clickAddButtonHandler} >추가하기</button></div> 
-      <div className='title-state'>Wortking..</div>
-      <div>
+      <div className='left'>My Todo List </div>
+      <div className='right'>React</div>
+      <div className='TodoWrapper'>제목<input value={title} onChange={titleChangeButtonHandler}  className='todo-input'/> 내용 <input value={word} onChange={wordChangeButtonHandler} className='todo-input'/> <button onClick={clickAddButtonHandler} className='todo-btn' >추가하기</button></div> 
+      <div  className='title-state'>Wortking..</div>
+      <div className='style'>
       {todos.filter((todo) => !todo.isDone)
       .map((progressTodo) => 
         (
@@ -90,7 +90,7 @@ function App() {
     }
       </div>
       <div className='title-state'>Done..!</div>
-      <div>
+      <div className='style'>
       {todos.filter((todo) => todo.isDone)
                 .map((doneTodo) => (
                     <Todo 
