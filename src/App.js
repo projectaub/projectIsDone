@@ -69,9 +69,9 @@ function App() {
  
 //  랜더링 하는곳
   return (
-    <div >
-      <div>My Todo List</div>
-      <div>React</div>
+    <div className='max' >
+      <div >My Todo List</div>
+      <div >React</div>
       <div>제목<input value={title} onChange={titleChangeButtonHandler}/> 내용 <input value={word} onChange={wordChangeButtonHandler}/> <button onClick={clickAddButtonHandler} >추가하기</button></div> 
       <div className='title-state'>Wortking..</div>
       <div>
