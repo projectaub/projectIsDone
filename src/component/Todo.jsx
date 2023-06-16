@@ -1,9 +1,5 @@
-
-
-
-const Todo = ({todo, onRemoveTodo , checkTodo})=>{
-  
-
+// TodoList 부분을 그려준다 . props룰 prev 로 받아서 받은내용의 함수나 객체를 사용 해준다.
+const Todo = ({todo, onRemoveTodo , checkTodo})=>{  
   const squareStyle = {
     width: "225px",
     height: "180px",
